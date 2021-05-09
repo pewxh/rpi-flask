@@ -119,4 +119,4 @@ pin_util.create({'pin_num': 27, 'color': 'blue', 'state': 'off'})
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
