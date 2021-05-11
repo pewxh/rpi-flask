@@ -15,7 +15,7 @@ ns = api.namespace('pins', description='Pin related operations')
 pin_model = api.model('pins', {
     'id': fields.Integer(readonly=True, description='Pin identifier'),
     'pin_num': fields.Integer(required=True, description='GPIO pin associated'),
-    'color': fields.String(required=True, description='Colourof the LED attached'),
+    'color': fields.String(description='Colourof the LED attached'),
     'state': fields.String(required=True, description='LED state')
 })
 
