@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restplus import Api, Resource, fields
 import RPi.GPIO as GPIO
-
+from flask_cors import CORS
 
 app = Flask(__name__)
 api = Api(app,
@@ -119,4 +119,5 @@ pin_util.create({'pin_num': 27, 'color': 'blue', 'state': 'off'})
 
 
 if __name__ == '__main__':
+    CORS(app)
     app.run(host='0.0.0.0',debug=True)
