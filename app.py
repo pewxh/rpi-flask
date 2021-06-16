@@ -119,5 +119,5 @@ pin_util.create({'pin_num': 27, 'color': 'blue', 'state': 'off'})
 
 
 if __name__ == '__main__':
-    CORS(app,resources={r"/*":{"origins":"*"}})
+    CORS(app,resources={r"*":{"origins":"*"}})
     app.run(host='0.0.0.0',debug=True)
